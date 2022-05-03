@@ -20,13 +20,14 @@ struct HeaderView: View {
                     .offset(x: .zero, y: 24)
                 , alignment: .bottom
             )
+            .padding()
     }
 }
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView(photo: .init(decorative: "Tanya"))
-            .padding()
+            .padding(24)
             .previewLayout(.sizeThatFits)
     }
 }

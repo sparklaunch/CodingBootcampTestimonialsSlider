@@ -14,6 +14,9 @@ struct TestimonialPageView: View {
             BackgroundView()
             VStack {
                 HeaderView(photo: testimonial.photo)
+                    .padding(36)
+                DetailView(detail: testimonial.text, name: testimonial.name, status: testimonial.status)
+                    .padding(24)
             }
         }
     }

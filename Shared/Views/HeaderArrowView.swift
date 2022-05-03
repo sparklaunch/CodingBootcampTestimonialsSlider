@@ -15,15 +15,23 @@ struct HeaderArrowView: View {
                 .frame(width: 100, height: 50)
                 .shadow(radius: 10)
             HStack {
-                Image("PrevIcon")
-                    .resizable()
-                    .frame(width: 12, height: 18)
-                    .padding()
+                Button {
+                    // TODO: PREVIOUS PAGE.
+                } label: {
+                    Image("PrevIcon")
+                        .resizable()
+                        .frame(width: 12, height: 18)
+                        .padding()
+                }
                 Spacer()
-                Image("NextIcon")
-                    .resizable()
-                    .frame(width: 12, height: 18)
-                    .padding()
+                Button {
+                    // TODO: NEXT PAGE.
+                } label: {
+                    Image("NextIcon")
+                        .resizable()
+                        .frame(width: 12, height: 18)
+                        .padding()
+                }
             }
         }
         .fixedSize(horizontal: true, vertical: true)
