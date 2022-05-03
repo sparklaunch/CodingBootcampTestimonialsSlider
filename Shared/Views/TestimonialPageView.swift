@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct TestimonialPageView: View {
+    let testimonial: Testimonial
     var body: some View {
         ZStack {
             BackgroundView()
+            VStack {
+                HeaderView(photo: testimonial.photo)
+            }
         }
     }
 }
 
 struct TestimonialPageView_Previews: PreviewProvider {
     static var previews: some View {
-        TestimonialPageView()
+        TestimonialPageView(testimonial: TestimonialStorage().testimonials.first!)
     }
 }

@@ -16,6 +16,8 @@
 		90EB23702820B38A0093FA5F /* TestimonialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB236F2820B38A0093FA5F /* TestimonialPageView.swift */; };
 		90EB23722820B3A20093FA5F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23712820B3A20093FA5F /* BackgroundView.swift */; };
 		90EB23742820B5290093FA5F /* Testimonial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23732820B5290093FA5F /* Testimonial.swift */; };
+		90EB23762820B87F0093FA5F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23752820B87F0093FA5F /* HeaderView.swift */; };
+		90EB23782820B99C0093FA5F /* HeaderArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23772820B99C0093FA5F /* HeaderArrowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		90EB236F2820B38A0093FA5F /* TestimonialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialPageView.swift; sourceTree = "<group>"; };
 		90EB23712820B3A20093FA5F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		90EB23732820B5290093FA5F /* Testimonial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testimonial.swift; sourceTree = "<group>"; };
+		90EB23752820B87F0093FA5F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		90EB23772820B99C0093FA5F /* HeaderArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderArrowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				90EB234F2820B1360093FA5F /* ContentView.swift */,
 				90EB236F2820B38A0093FA5F /* TestimonialPageView.swift */,
 				90EB23712820B3A20093FA5F /* BackgroundView.swift */,
+				90EB23752820B87F0093FA5F /* HeaderView.swift */,
+				90EB23772820B99C0093FA5F /* HeaderArrowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,8 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				90EB23602820B1370093FA5F /* ContentView.swift in Sources */,
+				90EB23762820B87F0093FA5F /* HeaderView.swift in Sources */,
 				90EB23702820B38A0093FA5F /* TestimonialPageView.swift in Sources */,
 				90EB23722820B3A20093FA5F /* BackgroundView.swift in Sources */,
+				90EB23782820B99C0093FA5F /* HeaderArrowView.swift in Sources */,
 				90EB235E2820B1370093FA5F /* CodingBootcampTestimonialsSliderApp.swift in Sources */,
 				90EB23742820B5290093FA5F /* Testimonial.swift in Sources */,
 			);

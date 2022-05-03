@@ -11,7 +11,7 @@ import SwiftUI
 struct CodingBootcampTestimonialsSliderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(testimonialStorage: .init())
         }
     }
 }

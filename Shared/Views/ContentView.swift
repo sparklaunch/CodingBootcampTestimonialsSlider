@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var testimonialStorage: TestimonialStorage
     var body: some View {
         TabView {
-            TestimonialPageView()
-            TestimonialPageView()
+            ForEach(testimonialStorage.testimonials, id: \.self) { testimonial in
+                TestimonialPageView(testimonial: testimonial)
+            }
         }
         .tabViewStyle(.page)
         .edgesIgnoringSafeArea(.all)
@@ -20,6 +22,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(testimonialStorage: .init())
     }
 }
