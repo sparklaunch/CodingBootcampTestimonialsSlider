@@ -10,13 +10,16 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var testimonialStorage: TestimonialStorage
     var body: some View {
-        TabView {
-            ForEach(testimonialStorage.testimonials, id: \.self) { testimonial in
-                TestimonialPageView(testimonial: testimonial)
+        ZStack {
+            BackgroundView()
+            TabView {
+                ForEach(testimonialStorage.testimonials, id: \.self) { testimonial in
+                    TestimonialPageView(testimonial: testimonial)
+                }
             }
+            .tabViewStyle(.page)
+            .edgesIgnoringSafeArea(.all)
         }
-        .tabViewStyle(.page)
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

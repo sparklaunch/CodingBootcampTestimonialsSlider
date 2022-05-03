@@ -10,14 +10,11 @@ import SwiftUI
 struct TestimonialPageView: View {
     let testimonial: Testimonial
     var body: some View {
-        ZStack {
-            BackgroundView()
-            VStack {
-                HeaderView(photo: testimonial.photo)
-                    .padding(36)
-                DetailView(detail: testimonial.text, name: testimonial.name, status: testimonial.status)
-                    .padding(24)
-            }
+        VStack {
+            HeaderView(photo: testimonial.photo)
+                .padding(36)
+            DetailView(detail: testimonial.text, name: testimonial.name, status: testimonial.status)
+                .padding(24)
         }
     }
 }
