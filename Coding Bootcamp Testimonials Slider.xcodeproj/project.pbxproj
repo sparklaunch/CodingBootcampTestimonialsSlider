@@ -13,6 +13,8 @@
 		90EB23612820B1370093FA5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB234F2820B1360093FA5F /* ContentView.swift */; };
 		90EB23622820B1370093FA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EB23502820B1370093FA5F /* Assets.xcassets */; };
 		90EB23632820B1370093FA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EB23502820B1370093FA5F /* Assets.xcassets */; };
+		90EB23702820B38A0093FA5F /* TestimonialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB236F2820B38A0093FA5F /* TestimonialPageView.swift */; };
+		90EB23722820B3A20093FA5F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23712820B3A20093FA5F /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		90EB23552820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coding Bootcamp Testimonials Slider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EB235B2820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coding Bootcamp Testimonials Slider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EB235D2820B1370093FA5F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		90EB236F2820B38A0093FA5F /* TestimonialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialPageView.swift; sourceTree = "<group>"; };
+		90EB23712820B3A20093FA5F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				90EB234F2820B1360093FA5F /* ContentView.swift */,
+				90EB236F2820B38A0093FA5F /* TestimonialPageView.swift */,
+				90EB23712820B3A20093FA5F /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90EB23602820B1370093FA5F /* ContentView.swift in Sources */,
+				90EB23702820B38A0093FA5F /* TestimonialPageView.swift in Sources */,
+				90EB23722820B3A20093FA5F /* BackgroundView.swift in Sources */,
 				90EB235E2820B1370093FA5F /* CodingBootcampTestimonialsSliderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
