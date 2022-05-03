@@ -19,8 +19,8 @@
 		90EB234E2820B1360093FA5F /* CodingBootcampTestimonialsSliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingBootcampTestimonialsSliderApp.swift; sourceTree = "<group>"; };
 		90EB234F2820B1360093FA5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90EB23502820B1370093FA5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90EB23552820B1370093FA5F /* CodingBootcampTestimonialsSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingBootcampTestimonialsSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EB235B2820B1370093FA5F /* CodingBootcampTestimonialsSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingBootcampTestimonialsSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EB23552820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coding Bootcamp Testimonials Slider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EB235B2820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coding Bootcamp Testimonials Slider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EB235D2820B1370093FA5F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +54,9 @@
 		90EB234D2820B1360093FA5F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				90EB234E2820B1360093FA5F /* CodingBootcampTestimonialsSliderApp.swift */,
-				90EB234F2820B1360093FA5F /* ContentView.swift */,
-				90EB23502820B1370093FA5F /* Assets.xcassets */,
+				90EB236E2820B15A0093FA5F /* Models */,
+				90EB236D2820B1540093FA5F /* Views */,
+				90EB236C2820B1490093FA5F /* App */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		90EB23562820B1370093FA5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90EB23552820B1370093FA5F /* CodingBootcampTestimonialsSlider.app */,
-				90EB235B2820B1370093FA5F /* CodingBootcampTestimonialsSlider.app */,
+				90EB23552820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */,
+				90EB235B2820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +78,36 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		90EB236C2820B1490093FA5F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90EB234E2820B1360093FA5F /* CodingBootcampTestimonialsSliderApp.swift */,
+				90EB23502820B1370093FA5F /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		90EB236D2820B1540093FA5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90EB234F2820B1360093FA5F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90EB236E2820B15A0093FA5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90EB23542820B1370093FA5F /* CodingBootcampTestimonialsSlider (iOS) */ = {
+		90EB23542820B1370093FA5F /* Coding Bootcamp Testimonials Slider (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90EB23662820B1370093FA5F /* Build configuration list for PBXNativeTarget "CodingBootcampTestimonialsSlider (iOS)" */;
+			buildConfigurationList = 90EB23662820B1370093FA5F /* Build configuration list for PBXNativeTarget "Coding Bootcamp Testimonials Slider (iOS)" */;
 			buildPhases = (
 				90EB23512820B1370093FA5F /* Sources */,
 				90EB23522820B1370093FA5F /* Frameworks */,
@@ -93,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = "CodingBootcampTestimonialsSlider (iOS)";
+			name = "Coding Bootcamp Testimonials Slider (iOS)";
 			productName = "CodingBootcampTestimonialsSlider (iOS)";
-			productReference = 90EB23552820B1370093FA5F /* CodingBootcampTestimonialsSlider.app */;
+			productReference = 90EB23552820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */;
 			productType = "com.apple.product-type.application";
 		};
-		90EB235A2820B1370093FA5F /* CodingBootcampTestimonialsSlider (macOS) */ = {
+		90EB235A2820B1370093FA5F /* Coding Bootcamp Testimonials Slider (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90EB23692820B1370093FA5F /* Build configuration list for PBXNativeTarget "CodingBootcampTestimonialsSlider (macOS)" */;
+			buildConfigurationList = 90EB23692820B1370093FA5F /* Build configuration list for PBXNativeTarget "Coding Bootcamp Testimonials Slider (macOS)" */;
 			buildPhases = (
 				90EB23572820B1370093FA5F /* Sources */,
 				90EB23582820B1370093FA5F /* Frameworks */,
@@ -110,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "CodingBootcampTestimonialsSlider (macOS)";
+			name = "Coding Bootcamp Testimonials Slider (macOS)";
 			productName = "CodingBootcampTestimonialsSlider (macOS)";
-			productReference = 90EB235B2820B1370093FA5F /* CodingBootcampTestimonialsSlider.app */;
+			productReference = 90EB235B2820B1370093FA5F /* Coding Bootcamp Testimonials Slider.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90EB234C2820B1360093FA5F /* Build configuration list for PBXProject "CodingBootcampTestimonialsSlider" */;
+			buildConfigurationList = 90EB234C2820B1360093FA5F /* Build configuration list for PBXProject "Coding Bootcamp Testimonials Slider" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +170,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90EB23542820B1370093FA5F /* CodingBootcampTestimonialsSlider (iOS) */,
-				90EB235A2820B1370093FA5F /* CodingBootcampTestimonialsSlider (macOS) */,
+				90EB23542820B1370093FA5F /* Coding Bootcamp Testimonials Slider (iOS) */,
+				90EB235A2820B1370093FA5F /* Coding Bootcamp Testimonials Slider (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -324,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.CodingBootcampTestimonialsSlider;
-				PRODUCT_NAME = CodingBootcampTestimonialsSlider;
+				PRODUCT_NAME = "Coding Bootcamp Testimonials Slider";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.CodingBootcampTestimonialsSlider;
-				PRODUCT_NAME = CodingBootcampTestimonialsSlider;
+				PRODUCT_NAME = "Coding Bootcamp Testimonials Slider";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -384,7 +412,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.CodingBootcampTestimonialsSlider;
-				PRODUCT_NAME = CodingBootcampTestimonialsSlider;
+				PRODUCT_NAME = "Coding Bootcamp Testimonials Slider";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +440,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.CodingBootcampTestimonialsSlider;
-				PRODUCT_NAME = CodingBootcampTestimonialsSlider;
+				PRODUCT_NAME = "Coding Bootcamp Testimonials Slider";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90EB234C2820B1360093FA5F /* Build configuration list for PBXProject "CodingBootcampTestimonialsSlider" */ = {
+		90EB234C2820B1360093FA5F /* Build configuration list for PBXProject "Coding Bootcamp Testimonials Slider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EB23642820B1370093FA5F /* Debug */,
@@ -431,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90EB23662820B1370093FA5F /* Build configuration list for PBXNativeTarget "CodingBootcampTestimonialsSlider (iOS)" */ = {
+		90EB23662820B1370093FA5F /* Build configuration list for PBXNativeTarget "Coding Bootcamp Testimonials Slider (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EB23672820B1370093FA5F /* Debug */,
@@ -440,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90EB23692820B1370093FA5F /* Build configuration list for PBXNativeTarget "CodingBootcampTestimonialsSlider (macOS)" */ = {
+		90EB23692820B1370093FA5F /* Build configuration list for PBXNativeTarget "Coding Bootcamp Testimonials Slider (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90EB236A2820B1370093FA5F /* Debug */,
