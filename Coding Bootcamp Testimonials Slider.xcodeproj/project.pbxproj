@@ -19,6 +19,7 @@
 		90EB23762820B87F0093FA5F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23752820B87F0093FA5F /* HeaderView.swift */; };
 		90EB23782820B99C0093FA5F /* HeaderArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23772820B99C0093FA5F /* HeaderArrowView.swift */; };
 		90EB237A2820BB530093FA5F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23792820BB530093FA5F /* DetailView.swift */; };
+		90EB237C2820BE430093FA5F /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB237B2820BE430093FA5F /* GlobalState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		90EB23752820B87F0093FA5F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		90EB23772820B99C0093FA5F /* HeaderArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderArrowView.swift; sourceTree = "<group>"; };
 		90EB23792820BB530093FA5F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		90EB237B2820BE430093FA5F /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				90EB23732820B5290093FA5F /* Testimonial.swift */,
+				90EB237B2820BE430093FA5F /* GlobalState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				90EB23602820B1370093FA5F /* ContentView.swift in Sources */,
 				90EB237A2820BB530093FA5F /* DetailView.swift in Sources */,
+				90EB237C2820BE430093FA5F /* GlobalState.swift in Sources */,
 				90EB23762820B87F0093FA5F /* HeaderView.swift in Sources */,
 				90EB23702820B38A0093FA5F /* TestimonialPageView.swift in Sources */,
 				90EB23722820B3A20093FA5F /* BackgroundView.swift in Sources */,

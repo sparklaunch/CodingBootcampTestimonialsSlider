@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct TestimonialPageView: View {
+    let pageIndex: Int
     let testimonial: Testimonial
     var body: some View {
         VStack {
-            HeaderView(photo: testimonial.photo)
+            HeaderView(pageIndex: pageIndex, photo: testimonial.photo)
                 .padding(36)
             DetailView(detail: testimonial.text, name: testimonial.name, status: testimonial.status)
                 .padding(24)
@@ -21,6 +22,6 @@ struct TestimonialPageView: View {
 
 struct TestimonialPageView_Previews: PreviewProvider {
     static var previews: some View {
-        TestimonialPageView(testimonial: TestimonialStorage().testimonials.first!)
+        TestimonialPageView(pageIndex: .zero, testimonial: TestimonialStorage().testimonials.first!)
     }
 }

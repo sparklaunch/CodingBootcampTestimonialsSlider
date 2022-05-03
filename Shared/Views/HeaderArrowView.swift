@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HeaderArrowView: View {
+    @EnvironmentObject var globalState: GlobalState
+    let pageIndex: Int
     var body: some View {
         ZStack {
             Capsule(style: .continuous)
@@ -16,7 +18,9 @@ struct HeaderArrowView: View {
                 .shadow(radius: 10)
             HStack {
                 Button {
-                    // TODO: PREVIOUS PAGE.
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: .zero)) {
+                        globalState.prevPage(with: pageIndex)
+                    }
                 } label: {
                     Image("PrevIcon")
                         .resizable()
@@ -25,7 +29,9 @@ struct HeaderArrowView: View {
                 }
                 Spacer()
                 Button {
-                    // TODO: NEXT PAGE.
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: .zero)) {
+                        globalState.nextPage(with: pageIndex)
+                    }
                 } label: {
                     Image("NextIcon")
                         .resizable()
@@ -40,8 +46,9 @@ struct HeaderArrowView: View {
 
 struct HeaderArrowView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderArrowView()
+        HeaderArrowView(globalState: .init(), pageIndex: .zero)
             .padding()
             .previewLayout(.sizeThatFits)
+            .environmentObject(GlobalState())
     }
 }

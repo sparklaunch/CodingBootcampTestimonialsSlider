@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    let pageIndex: Int
     let photo: Image
     var body: some View {
         photo
@@ -16,7 +17,7 @@ struct HeaderView: View {
             .cornerRadius(10)
             .shadow(radius: 10)
             .overlay(
-                HeaderArrowView()
+                HeaderArrowView(pageIndex: pageIndex)
                     .offset(x: .zero, y: 24)
                 , alignment: .bottom
             )
@@ -26,7 +27,7 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(photo: .init(decorative: "Tanya"))
+        HeaderView(pageIndex: .zero, photo: .init(decorative: "Tanya"))
             .padding(24)
             .previewLayout(.sizeThatFits)
     }

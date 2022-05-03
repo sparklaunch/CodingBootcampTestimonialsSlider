@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var globalState: GlobalState = .init()
     @ObservedObject var testimonialStorage: TestimonialStorage
     var body: some View {
         ZStack {
             BackgroundView()
-            TabView {
-                ForEach(testimonialStorage.testimonials, id: \.self) { testimonial in
-                    TestimonialPageView(testimonial: testimonial)
+            TabView(selection: $globalState.currentPage) {
+                ForEach(Array(testimonialStorage.testimonials.enumerated()), id: \.element) { index, testimonial in
+                    TestimonialPageView(pageIndex: index, testimonial: testimonial)
+                        .tag(index)
                 }
             }
             .tabViewStyle(.page)
             .edgesIgnoringSafeArea(.all)
         }
+        .environmentObject(globalState)
     }
 }
 
