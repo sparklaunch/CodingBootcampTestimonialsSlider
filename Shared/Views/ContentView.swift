@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
+        TabView {
+            TestimonialPageView()
             TestimonialPageView()
         }
         .tabViewStyle(.page)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
